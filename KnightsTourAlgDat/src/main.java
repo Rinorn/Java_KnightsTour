@@ -9,7 +9,7 @@ public class main {
     //Initiates the grid and possible move combinations, sets the start position and runs a method to find a route for the Knight to move
     static boolean init() {
         int route[][] = new int[N][N];
-
+        
         /* Initialization of solution matrix */
         for (int x = 0; x < N; x++){
             for (int y = 0; y < N; y++){
@@ -59,7 +59,6 @@ public class main {
                 }
             }
         }
-
         return false;
     }
 
@@ -81,7 +80,6 @@ public class main {
 
     //main method. sets the size of the bord, as well as the startpos for the knight. also runs the init function.
     public static void main(String args[]) {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter board size: ");
         N = sc.nextInt();
@@ -89,7 +87,6 @@ public class main {
         startXpos = sc.nextInt() -1 ;
         System.out.println("Enter vertical starting position: ");
         startYPos = sc.nextInt() -1;
-
         init();
     }
 }
